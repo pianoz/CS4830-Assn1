@@ -1,0 +1,128 @@
+<DOCTYPE! html>
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+<link rel="stylesheet" href="phone.css">
+</head>
+<body>
+
+  <div class="tab">
+    <button class="tablinks" onclick="newtab(event, 'Dialer')">Dialer</button>
+    <button class="tablinks" onclick="newtab(event, 'CL')">Contact List</button>
+    <button class="tablinks" onclick="newtab(event, 'AC')">Add Contact</button>
+  </div>
+
+
+<div id="Dialer" class="content">
+  <div class="title"> DIALER
+  </div>
+  <div class="dialerinputbox">
+  <form action="/action_page.php">
+  <br>
+  <input class="dialer_input" type="text" name="phone_number" value="">
+  </div>
+
+  <div class="row1">
+    <button type="button">
+      <p class="dial">1</p>
+    </button>
+    <button type="button">
+      <p class="dial">2</p>
+    </button>
+    <button type="button">
+      <p class="dial">3</p>
+    </button>
+  </div>
+
+  <div class="row2">
+    <button type="button">
+      <p class="dial">4</p>
+    </button>
+    <button type="button">
+      <p class="dial">5</p>
+    </button>
+    <button type="button">
+      <p class="dial">6</p>
+    </button>
+  </div>
+
+  <div class="row3">
+    <button type="button">
+      <p class="dial">7</p>
+    </button>
+    <button type="button">
+      <p class="dial">8</p>
+    </button>
+    <button type="button">
+      <p class="dial">9</p>
+    </button>
+  </div>
+
+  <div class="row4">
+    <button type="button">
+      <p class="dial">*</p>
+    </button>
+    <button type="button">
+      <p class="dial">0</p>
+    </button>
+    <button type="button">
+      <p class="dial">#</p>
+    </button>
+  </div>
+
+  <div class="row5">
+    <button type="button">
+      <p class="dial">dial</p>
+    </button>
+    <button type="button">
+      <p class="dial">clear</p>
+    </button>
+  </div>
+</div>
+
+
+</div>
+
+<div id="CL" class="content">
+  <div class="title"> CONTACT LIST
+  </div>
+  <div class="CList_container">
+    <li><button class="contact_button" type="button"> Natalia Veselnitskaya</button></li>
+    <li><button class="contact_button" type="button"> Russian Embassy</button></li>
+    <li><button class="contact_button" type="button"> Michael Flynn</button></li>
+    <li><button class="contact_button" type="button"> Jared Kushner</button></li>
+    <li><button class="contact_button" type="button"> DC I.T. and Data Erasure</button></li>
+  </div>
+</div>
+
+<div id="AC" class="content">
+  <div class="title"> ADD CONTACT
+  </div>
+  <div class="AC_container">
+    <div class="ACinputdiv">
+    <form action="/action_page.php">
+      Name:
+      <input class="AC_input" type="text" name="name" value="">
+      Phone Number:
+      <input class="AC_input" type="text" name="name" value="">
+      Email:
+      <input class="AC_input" type="text" name="name" value="">
+    </form>
+    </div>
+    <button class="AC_button1" type="button">Add Contact</button>
+    <button class="AC_button2" type="button">Clear</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script src="phone.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

@@ -6,10 +6,12 @@
 </head>
 <body>
 
+
+
   <div class="tab">
-    <button class="tablinks" onclick="newtab(event, 'Dialer')">Dialer</button>
-    <button class="tablinks" onclick="newtab(event, 'CL')">Contact List</button>
-    <button class="tablinks" onclick="newtab(event, 'AC')">Add Contact</button>
+    <button class="tablinks" onclick="hide_yo_tabs('Dialer')">Dialer</button>
+    <button class="tablinks" onclick="hide_yo_tabs('CL')">Contact List</button>
+    <button class="tablinks" onclick="hide_yo_tabs('AC')">Add Contact</button>
   </div>
 
 
@@ -23,7 +25,7 @@
   </div>
 
   <div class="row1">
-    <button type="button">
+    <button id='dial_id' type="button" onclick="click_to_keydown('1')">
       <p class="dial">1</p>
     </button>
     <button type="button">
@@ -74,7 +76,7 @@
     <button type="button">
       <p class="dial">dial</p>
     </button>
-    <button type="button">
+    <button  type="reset" value="Reset">
       <p class="dial">clear</p>
     </button>
   </div>
@@ -113,19 +115,18 @@
     </form>
     </div>
     <button class="AC_button1" type="button">Add Contact</button>
-    <button class="AC_button2" type="button">Clear</button>
+    <button class="AC_button2" type="reset" value="Reset">Clear</button>
 </div>
-
-
-
-
-
-
-
-
-
+<script>
+!function() {
+  var x = document.getElementById("Dialer");
+  var y = document.getElementById("CL");
+  var z = document.getElementById("AC");
+  x.style.display = "block";
+  y.style.display = "none";
+  z.style.display = "none";
+}()</script>
 
   <script src="phone.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

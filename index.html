@@ -7,67 +7,68 @@
 <body>
 
 
-
+<div class= "tabcontainer">
   <div class="tab">
     <button class="tablinks" onclick="hide_yo_tabs('Dialer')">Dialer</button>
     <button class="tablinks" onclick="hide_yo_tabs('CL')">Contact List</button>
     <button class="tablinks" onclick="hide_yo_tabs('AC')">Add Contact</button>
+    <button class="tablinks" onclick="hide_yo_tabs('GP')">Gesture Practice</button>
   </div>
+</div>
 
 
 <div id="Dialer" class="content">
   <div class="title"> DIALER
   </div>
   <div class="dialerinputbox">
-  <form action="/action_page.php">
   <br>
-  <input class="dialer_input" type="text" name="phone_number" value="">
+  <div class="dialer_window"><p id="dial_id"></p></div>
   </div>
 
   <div class="row1">
-    <button id='dial_id' type="button" onclick="click_to_keydown('1')">
+    <button id='dial_id' type="button" onclick="dialbutton(1)">
       <p class="dial">1</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(2)">
       <p class="dial">2</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(3)">
       <p class="dial">3</p>
     </button>
   </div>
 
   <div class="row2">
-    <button type="button">
+    <button type="button" onclick="dialbutton(4)">
       <p class="dial">4</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(5)">
       <p class="dial">5</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(6)">
       <p class="dial">6</p>
     </button>
   </div>
 
   <div class="row3">
-    <button type="button">
+    <button type="button" onclick="dialbutton(7)">
       <p class="dial">7</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(8)">
       <p class="dial">8</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(9)">
       <p class="dial">9</p>
     </button>
   </div>
 
   <div class="row4">
-    <button type="button">
+    <button type="button" onclick="dialbutton(*)">
       <p class="dial">*</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(0)">
       <p class="dial">0</p>
     </button>
-    <button type="button">
+    <button type="button" onclick="dialbutton(#)">
       <p class="dial">#</p>
     </button>
   </div>
@@ -76,7 +77,7 @@
     <button type="button">
       <p class="dial">dial</p>
     </button>
-    <button  type="reset" value="Reset">
+    <button type="button" onclick="clear()">
       <p class="dial">clear</p>
     </button>
   </div>
@@ -117,6 +118,18 @@
     <button class="AC_button1" type="button">Add Contact</button>
     <button class="AC_button2" type="reset" value="Reset">Clear</button>
 </div>
+
+
+<div id="GP" class="content">
+    <div class="title"> Gesture Practice</div>
+    <div class="gesture_box">m
+    </div>
+</div>
+
+
+
+
+
 <script>
 !function() {
   var x = document.getElementById("Dialer");

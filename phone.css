@@ -1,12 +1,18 @@
 
 /* tab formatting */
+
+.tabcontainer{
+  position: absolute;
+  width:100%
+
+}
 .tab button {
     background-color: white;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 2em;
+    width: 20%;
 }
 
 #Dialer{
@@ -18,7 +24,16 @@
 #AC{
   visibility: none;
 }
+#GP{
+  visibility: none;
+}
 
+.dialer_window{
+  width:80%;
+  height:2em;
+  border-style: solid;
+  border-width: medium;
+}
 
 /*dialer stuff till line 74*/
 .dialerinputbox{
@@ -133,4 +148,14 @@ li{
   top: 30%;
   left: 32%;
   width: 30%;
+}
+.gesture_box{
+  position:absolute;
+  top:20%;
+  left:18%;
+  height:100px;
+  width: 100px;
+  background-color: grey;
+  border-width: medium;
+  border-color: magenta;
 }

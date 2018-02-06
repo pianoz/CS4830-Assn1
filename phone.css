@@ -149,13 +149,13 @@ li{
   left: 32%;
   width: 30%;
 }
-.gesture_box{
+#gpbox{
   position:absolute;
-  top:20%;
+  top: 24%;
   left:18%;
-  height:100px;
-  width: 100px;
-  background-color: grey;
-  border-width: medium;
+  height: 300px;
+  width: 300px;
+  background: grey;
   border-color: magenta;
+  border-width: medium;
 }

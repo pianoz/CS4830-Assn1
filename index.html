@@ -117,12 +117,14 @@
     </div>
     <button class="AC_button1" type="button">Add Contact</button>
     <button class="AC_button2" type="reset" value="Reset">Clear</button>
+  </div>
 </div>
 
 
 <div id="GP" class="content">
-    <div class="title"> Gesture Practice</div>
-    <div class="gesture_box">m
+    <div class="title"> Gesture Practice
+    </div>
+    <div id="gpbox">
     </div>
 </div>
 
@@ -135,9 +137,11 @@
   var x = document.getElementById("Dialer");
   var y = document.getElementById("CL");
   var z = document.getElementById("AC");
+  var gp = document.getElementById("GP");
   x.style.display = "block";
   y.style.display = "none";
   z.style.display = "none";
+  gp.style.display = "none";
 }()</script>
 
   <script src="phone.js"></script>

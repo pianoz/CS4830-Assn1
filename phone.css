@@ -159,3 +159,16 @@ li{
   border-color: magenta;
   border-width: medium;
 }
+#gestureWindow{
+  position:absolute;
+  top: 18%;
+  left: 18%;
+  height: 20px;
+  width:100px;
+  border-color: black;
+  border-width: medium;
+  text-align: center;
+}
+#gtext{
+  text-align:center;
+}
